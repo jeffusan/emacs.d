@@ -36,3 +36,6 @@ site-lisp/package/
 /.cask/
 /.sx/
 /org-clock-save.el
+/ensime/
+ido.last
+recentf
