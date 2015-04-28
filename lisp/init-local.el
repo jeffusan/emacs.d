@@ -1,14 +1,8 @@
 ;;; Commentary:
 
-;; scala mode and ensime
-(require 'ensime)
-(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 (push "/usr/local/bin/sbt" exec-path)
 (push "/Users/jeff/.svm/current/rt/bin/scala" exec-path)
 (push "/Applications/Postgres.app/Contents/Versions/9.4/bin/psql" exec-path)
-
-(gradle-mode 0)
-;;; Code:
 
 (setq org-directory "~/Documents/orgs/")
 (setq org-default-notes-file "~/Documents/orgs/.notes")
@@ -71,11 +65,10 @@
 (define-key global-map "\C-cl" 'org-store-link)
 
 (global-set-key (kbd "M-<right>") 'paredit-forward-slurp-sexp)
-;(global-set-key (kbd "M-<left>") 'paredit-backward-barf-sexp)
+                                        ;(global-set-key (kbd "M-<left>") 'paredit-backward-barf-sexp)
 
 
-(load (expand-file-name "~/quicklisp/slime-helper.el"))
-  ;; Replace "sbcl" with the path to your implementation
+;; Replace "sbcl" with the path to your implementation
 (setq inferior-lisp-program "sbcl")
 
 

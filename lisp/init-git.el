@@ -9,6 +9,8 @@
 (require-package 'git-messenger) ;; Though see also vc-annotate's "n" & "p" bindings
 (require-package 'git-timemachine)
 
+(setq magit-last-seen-setup-instructions "1.4.0")
+
 (setq-default
  magit-save-some-buffers nil
  magit-process-popup-time 10
